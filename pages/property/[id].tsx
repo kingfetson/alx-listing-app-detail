@@ -12,12 +12,12 @@ export default function PropertyPage() {
   if (!property) return <p>Property not found</p>;
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="md:w-2/3">
+    <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="md:col-span-2">
         <PropertyDetail property={property} />
         <ReviewSection reviews={property.reviews} />
       </div>
-      <div className="md:w-1/3">
+      <div>
         <BookingSection price={property.price} />
       </div>
     </div>
