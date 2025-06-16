@@ -50,3 +50,8 @@ export const PROPERTYLISTINGSAMPLE = [
     ]
   }
 ];
+
+export const BACKGROUND_IMAGE = {
+  heroBackgroundMobile: "/assets/images/Hero/hero-mobile.png",
+  heroBackgroundDesktop: "/assets/images/Hero/hero-desktop.png",
+};

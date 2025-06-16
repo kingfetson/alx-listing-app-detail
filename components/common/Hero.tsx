@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { BACKGROUND_IMAGE } from "@/constants";
+import { BACKGROUND_IMAGE } from "@/constants/index";
 
 const Hero: React.FC = () => {
   return (

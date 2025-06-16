@@ -9,7 +9,7 @@ const Card: React.FC<PropertyProps> = ({
   rating,
   category,
   price,
-  offers,
+  offers = {},
   image,
   discount,
 }) => {
@@ -46,7 +46,7 @@ const Card: React.FC<PropertyProps> = ({
         <div className=" grid grid-cols-3 border border-gray-300 w-[125px] rounded-full px-2">
           <div className="flex items-center">
             <Image src="/assets/icons/bed 1.png" alt="star" width={10} height={10} />
-            <p className="ml-1 text-[11px] font-medium">{offers.bed}</p>
+            <p className="ml-1 text-[11px] font-medium">{offers.bed ?? 0}</p>
           </div>
           <div className="flex items-center">
             <Image src="/assets/icons/bathtub 1.png" alt="star" width={10} height={10} />
